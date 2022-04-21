@@ -11,6 +11,8 @@ app.get('/api', (req, res) => {
   res.send({ message: 'Welcome to fashion-backend!' });
 });
 
+app.use('/api/static', express.static(__dirname + '/assets'));
+
 app.get('/api/elegant', (req, res) => {
   res.send({
     products: [
