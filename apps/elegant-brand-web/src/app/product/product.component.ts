@@ -8,6 +8,9 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 })
 export class ProductComponent {
   @Input()
+  productId!: number;
+
+  @Input()
   name!: string;
 
   @Input()

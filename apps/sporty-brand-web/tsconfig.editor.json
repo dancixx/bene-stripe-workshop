@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts", "../../libs/shared-web/src/lib/product.model.ts"],
   "compilerOptions": {
     "types": ["jest", "node"]
   }

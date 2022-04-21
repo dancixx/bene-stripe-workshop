@@ -4,10 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedWebModule } from '@nx-stripe-workshop/shared-web';
 
 @NgModule({
   declarations: [AppComponent, ProductComponent],
-  imports: [BrowserModule, HttpClientModule],
+  imports: [BrowserModule, HttpClientModule, SharedWebModule],
   providers: [],
   bootstrap: [AppComponent],
 })
